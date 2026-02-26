@@ -2,11 +2,6 @@
 #include <cstdlib>
 #include <cstring>
 using namespace std;
-
-#define MAX_NAME 20
-#define MAX_PHONE 15
-#define MAX_MAJOR 30
-#define MAX_MEMBERS 100
 #define FILE_NAME "lab_members.csv"
 
 struct Member
@@ -15,15 +10,15 @@ struct Member
     int sex;
     int id;
     int group;
-    char major[MAX_MAJOR];
-    char name[MAX_NAME];
+    char major[100];
+    char name[100];
     int age;
-    char phone[MAX_PHONE];
+    char phone[100];
 };
 
 struct MemberSystem
 {
-    Member members[MAX_MEMBERS];
+    Member members[1000];
     int size;
 };
 
